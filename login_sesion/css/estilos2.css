@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin-bottom: 20px;
+    
+}
+
+.wrapper {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;    
+}
+.contenido {
+    padding-top: 80px;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+nav {
+    float: right;
+    /* Desplazamos el nav hacia la izquierda */
+}
+
+nav ul {
+    list-style: none;
+    /*overflow: hidden;*/
+    padding: 0;
+    /* Limpiamos errores de float */
+}
+
+nav ul li {
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    
+}
+
+nav ul li a {
+    display: block;
+    /* Convertimos los elementos a en elementos bloque para manipular el padding */
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+ nav ul li:hover {
+    background: #575e57;
+    transition: 1s;
+}
+/*EFECTO PARALLAX*/
+
+/*sunmenu*/
+
+
+nav  ul li ul {
+    background:rgba(0, 0, 0, 0.9);
+}
+nav ul  li ul a{
+    display: block;
+    /* Convertimos los elementos a en elementos bloque para manipular el padding */
+    padding: 20px;
+    color:whitesmoke;
+    text-decoration: none;
+    
+
+}
+nav  ul li ul {
+    display:none;
+    position: absolute;
+    min-width: 40px;
+    
+    
+}
+nav li:hover > ul{
+display: block;
+}
+
+nav li ul li{
+    position: relative;
+    
+}
+nav li ul li ul{
+    right: -127px;
+    top: 0px;
+}
+
+/*fin submenu*/
+
+section {
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 800px;
+    width: auto;   
+}
+
+#bloque1 {    
+    background-image:url("http://localhost/login_sesion/img/pag.jpg");    
+    background-position: center center;
+    background-size: none;
+    background-attachment: fixed;
+    background-repeat: no-repeat;    
+}
+
+#bloque2 {    
+    background-color: whitesmoke;
+    width: 100% !important;
+    height: 1500px;
+}
+
+
+
+/*FIN PARALLAX*/
+
+h3 {
+    background-color: blue;
+    height: 100px;
+    border-image: auto;
+    
+}
+
+#centro {
+    background-color: blue;
+    height: 250px;
+    width: 250px;
+    margin: 400px;
+    margin-right: 100px;
+    padding: 50px;
+    border-radius: 50%;
+}
+
+#parrafo {
+    width: 400px;
+    margin: auto;
+    padding: 25px;
+}
+#img1{
+    width: 15%;
+    height: 35%;
+    border-radius: 100%;
+    margin-left: 650px;
+    margin-right: auto;
+    margin-top: 50px;
+    display: block;
+    
+    }
+img:hover{
+        transform: scale(0.9);
+        cursor: pointer;
+    }
+
+    #img2{
+    width: 15%;
+    height: 35%;
+    border-radius: 100%;
+    margin-left: 850px;
+    margin-right: auto;
+    margin-top: 5px;
+    display: block;
+    
+    }
+    
